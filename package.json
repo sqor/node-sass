@@ -2,7 +2,7 @@
   "author": "Andrew Nesbitt <andrewnez@gmail.com> (http://andrew.github.com)",
   "name": "node-sass",
   "description": "wrapper around libsass",
-  "version": "0.8.14",
+  "version": "0.8.15",
   "homepage": "https://github.com/andrew/node-sass",
   "keywords": [
     "sass",
@@ -24,6 +24,7 @@
     "url": "git://github.com/andrew/node-sass.git"
   },
   "scripts": {
+    "preinstall": "git submodule update -i -r",
     "install": "node build.js",
     "test": "mocha test",
     "coverage": "bash scripts/coverage.sh",
