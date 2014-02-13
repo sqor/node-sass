@@ -24,7 +24,6 @@
     "url": "git://github.com/andrew/node-sass.git"
   },
   "scripts": {
-    "preinstall": "git submodule update -i -r",
     "install": "node build.js",
     "test": "mocha test",
     "coverage": "bash scripts/coverage.sh",
